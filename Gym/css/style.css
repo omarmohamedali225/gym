@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+:root{
+  --sec-color:#A466F4;
+  --side-color:#eeefff;
+}
+::selection{
+  background-color: #A466F4;
+  color: white;
+}
+body{
+  background-color: #eee;
+}
+.tx-col{
+  color: var(--sec-color);
+}
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #A466F4;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #eee;
+}
+/* start sidebar */
+.sidebar{
+  max-width: 300px;
+  background-color: var(--side-color);
+}
+.offcanvas-title span{
+  color: var(--sec-color);
+}
+.setting {
+  margin-right: 10px;
+}
+.offcanvas-body ul{
+  list-style: none;
+  position: absolute;
+  top: 130px;
+  width: 270px;
+  height: 450px;
+  overflow-x: hidden;
+}
+.offcanvas-body ul::-webkit-scrollbar{
+  width: 0px;
+}
+.offcanvas-body li{
+  margin-bottom: 14px;
+  cursor: pointer;
+  padding: 2px 10px;
+  border-radius: 20px;
+  width: 270px;
+} 
+.offcanvas-body li:hover{
+  background-color: var(--sec-color);
+  color: #fff;
+
+}
+.collapsing{
+  width: 270px;
+}
+.collapse .card{
+  width: 270px;
+}
+.collapse .card li{
+  width: 240px;
+}
+.navbar{
+  background-color: var(--side-color);
+}
+.li1,.li2,.li3{
+  display: flex;
+  justify-content: space-between;
+}
+.li1 .svg2,.li2 .svg2,.li3 .svg2{
+  display: none;
+}
+
+/* end sidebar */
+/* section2,5,6,7*/
+.section2 .search,
+.section5 .search,
+.section6 .search,
+.section7 .search{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.section2 .search input,
+.section5 .search input,
+.section6 .search input,
+.section7 .search input{
+  width: 65%;
+}
+.section2 .search button,
+.section5 .search button,
+.section6 .search button,
+.section7 .search button{
+  width: 27%;
+}
+table thead tr th,tr td,tr{
+  border: 1px solid;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n1{
+  max-width: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  transform: translateY(10%);
+}
+.n2{
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n3{
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n4{
+  max-width: 60px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n5{
+  max-width: 130px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n6{
+  max-width: 105px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n7{
+  max-width: 110px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n8{
+  max-width: 110px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.n9{
+  max-width: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+table tbody tr td button{
+  font-size: 14px;
+  background-color: #000000;
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--side-color);
+  white-space: nowrap;
+}
+table tbody tr td button:hover{
+  background-color: var(--side-color);
+  color: #000000;
+}
+table tbody tr:nth-child(even){
+  background-color: white;
+  color: black;
+}
+table tbody tr:nth-child(odd){
+  background-color: #3a627b;
+  color: white;
+}
+@media (width<=974px){
+  .q{
+    display: none;
+  }
+}
+@media (width<=862px){
+  .w{
+    display: none;
+  }
+}
+@media (width<=765px){
+  .e{
+    display: none;
+  }
+}
+@media (width<=665px){
+  .a{
+    display: none;
+  }
+}
+@media (width<=544px){
+  .s{
+    display: none;
+  }
+}
+@media (width<=482px){
+  .f{
+    display: none;
+  }
+}
+@media (width<=420px){
+  .n1{
+    display: none;
+  }
+}
+/* section2,5,6,7 */
+
+/* section4 */
+.section4 .b1{
+  display: flex;
+  justify-content: center;
+}
+.section4 table tbody tr td button:nth-child(1){
+  font-size: 12px;
+  background-color: rgb(210, 28, 28);
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--side-color);
+  white-space: nowrap;
+}
+.section4 table tbody tr td button:nth-child(1):hover,
+.section4 table tbody tr td button:nth-child(2):hover{
+  background-color: var(--side-color);
+  color: black;
+}
+.section4 table tbody tr td button:nth-child(2){
+  font-size: 12px;
+  background-color: rgb(18, 109, 1);
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--side-color);
+  white-space: nowrap;
+  margin-right: 5px;
+}
+/* section4 */
+
+/* section7 */
+.section7 table tbody tr td .b1{
+  background-color: rgb(18, 109, 1);
+}
+.section7 table tbody tr td .b1:hover{
+  background-color: rgb(18, 186, 55);
+  color: white;
+}
+.section7 table tbody tr td .b2{
+  background-color: rgb(255, 51, 0);
+}
+.section7 table tbody tr td .b2:hover{
+  background-color: rgb(183, 47, 23);
+  color: white;
+}
+/* section7 */
+
+/* section8 */
+.section8 .b1{
+  display: flex;
+  justify-content: center;
+}
+.section8 table tbody tr td button:nth-child(1){
+  font-size: 14px;
+  width: 100%;
+  background-color: rgb(210, 28, 28);
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--side-color);
+  white-space: nowrap;
+}
+.section8 table tbody tr td button:nth-child(1):hover,
+.section8 table tbody tr td button:nth-child(2):hover{
+  background-color: var(--side-color);
+  color: black;
+}
+.section8 table tbody tr td button:nth-child(2){
+  font-size: 14px;
+  width: 100%;
+  background-color: rgb(18, 109, 1);
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--side-color);
+  white-space: nowrap;
+  margin-right: 5px;
+}
+/* section8 */
+/* section9 */
+.section9 .b1{
+  display: flex;
+  justify-content: center;
+}
+.section9 table tbody tr td button:nth-child(1){
+  font-size: 14px;
+  width: 100%;
+  background-color: rgb(210, 28, 28);
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--side-color);
+  white-space: nowrap;
+}
+.section9 table tbody tr td button:nth-child(1):hover,
+.section9 table tbody tr td button:nth-child(2):hover{
+  background-color: var(--side-color);
+  color: black;
+}
+.section9 table tbody tr td button:nth-child(2){
+  font-size: 14px;
+  width: 100%;
+  background-color: rgb(18, 109, 1);
+  padding: 2px 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  color: var(--side-color);
+  white-space: nowrap;
+  margin-right: 5px;
+}
+/* section9 */
+/* sec1,2,3,4,5,6,7,8,9 */
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section8,
+.section9{
+  display: none;
+}
+
+
+@media (width>=992px) {
+  .sidebar{
+    transform: none !important;
+    visibility: visible !important;
+  }
+  main{
+    margin-right: 300px;
+  }
+  .navbar{
+    display: none;
+  }
+  
+}
+
+
